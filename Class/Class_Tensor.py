@@ -10,7 +10,7 @@ my_tensor = torch.tensor([[4.0, 1.0], [5.0, 3.0], [2.0, 1.0]]) # Cada [] es una 
 print(my_tensor)
 print(my_tensor[:]) # Hace lo mismo que arriba
 print(my_tensor[1:]) # Elimina la primera fila. O mejor dicho, empieza a imprimir por la segunda fila
-print(my_tensor[1:,:]) # Lo mismoa
+print(my_tensor[1:,:]) # Lo mismo
 print(my_tensor[0,:]) # Solo imprime la primera fila
 print(my_tensor[-1,0])  # Imprime de la última gila, el primer valor
 
