@@ -8,7 +8,7 @@ Created on Mon Sep 26 12:47:22 2022
 import time
 import torch
 import matplotlib
-matplotlib.use('TkAgg') #Needed to be used in MacBook
+matplotlib.use('TkAgg') #Needed to be used in MacBook with any error when we run the code
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -154,7 +154,7 @@ def main():
     plt.xlabel("Epoch")
     plt.ylabel("Computed Loss")
     plt.plot(losses)
-    plt.show() # To show the plot
+    plt.show() # To show the plot in MacBook
 
     test_val = torch.tensor([26])
 
