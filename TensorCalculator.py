@@ -33,17 +33,17 @@ class TensorCalculator:
     def tensor_sum(self):
         a = torch.rand(self.dim_x, self.dim_y) # To generate a random tensor I've used the funtion 'torch.rand'.
         b = torch.rand(self.dim_x, self.dim_y) # Same here.
-        print('Tensor a: \n', a)
-        print('Tensor b: \n', b)
-        return torch.add(a, b)
+        print('Tensor a: \n', a) # Showing the firt item of the sum
+        print('Tensor b: \n', b) # Showing the second item of the sum
+        return torch.add(a, b) # a + b
 
     # Multiplication of tensors:
     def tensor_multiplication(self):
         c = torch.rand(self.dim_x, self.dim_y) # Same as in the 'tensor_sum'.
         d = torch.rand(self.dim_x, self.dim_y) # Same as in the 'tensor_sum'.
-        print('Tensor c: \n', c)
-        print('Tensor d: \n', d)
-        return torch.mul(c, d)
+        print('Tensor c: \n', c) # Showing the first item of the multiplication
+        print('Tensor d: \n', d) # showing the second item of the multiplocation
+        return torch.mul(c, d) # c * d
 
 # As I want to generate random dimensions of the tensors, I use the 'random.randint' function for each dimension x & y:
 dim_x = random.randint(1, 7) # I choose an interval from 1 to 7 that are going to be the dimensions x of the tensor.
