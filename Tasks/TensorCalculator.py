@@ -33,7 +33,7 @@ class TensorCalculator:
     def tensor_sum(self):
         a = torch.rand(self.dim_x, self.dim_y) # To generate a random tensor I've used the function 'torch.rand'.
         b = torch.rand(self.dim_x, self.dim_y) # Same here.
-        print('Tensor a: \n', a) # Showing the firt item of the sum
+        print('Tensor a: \n', a) # Showing the first item of the sum
         print('Tensor b: \n', b) # Showing the second item of the sum
         return torch.add(a, b) # a + b
 
