@@ -39,15 +39,17 @@ class TensorCalculator:
 
     # Multiplication of tensors:
     def tensor_multiplication(self):
-        c = torch.rand(self.dim_x, self.dim_y) # Same as in the 'tensor_sum'.
-        d = torch.rand(self.dim_x, self.dim_y) # Same as in the 'tensor_sum'.
+        # Now we need to generate two tensors but with one condition: the number of rows of tensor c must be equal
+        # to the number of columns of tensro d. So:
+        c = torch.rand(self.dim_x, self.dim_y)
+        d = torch.rand(self.dim_y, self.dim_x)
         print('Tensor c: \n', c) # Showing the first item of the multiplication
         print('Tensor d: \n', d) # showing the second item of the multiplocation
-        return torch.mul(c, d) # c * d
+        return torch.matmul(c, d) # c * d
 
 # As I want to generate random dimensions of the tensors, I use the 'random.randint' function for each dimension x & y:
-dim_x = random.randint(1, 7) # I choose an interval from 1 to 7 that are going to be the dimensions x of the tensor.
-dim_y = random.randint(1, 7) # Same in the other diemsion y.
+dim_x = random.randint(2, 9) # I choose an interval from 2 to 9 that are going to be the dimensions x of the tensor.
+dim_y = random.randint(2, 9) # Same in the other diemsion y.
 results = TensorCalculator(dim_x, dim_y) # Generates the tensor with its dimensions in which I will work on.
 
 # Showing the results:
