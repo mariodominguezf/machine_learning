@@ -52,6 +52,7 @@ dim_x = random.randint(2, 9) # I choose an interval from 2 to 9 that are going t
 dim_y = random.randint(2, 9) # Same in the other diemsion y.
 results = TensorCalculator(dim_x, dim_y) # Generates the tensor with its dimensions in which I will work on.
 
+
 # Showing the results:
 print('All-Zeros Tensor: \n', results.tensor_zeros())
 print()
