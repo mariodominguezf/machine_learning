@@ -18,7 +18,7 @@ setup(
     version                 = VERSION,
     description             = 'Brief description of your package',
     author                  = AUTHOR,
-    author_email            = 'pedro.anquela@ufv.es',
+    author_email            = 'dominguezferrermario@gmail.com',
     license                 = 'MIT',
     python_requires         = '>=3.9.5',
     packages                = find_packages(),
