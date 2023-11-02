@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct  4 15:54:58 2022
 A brief comment just to modify the file
-@author: PedroAnquela
+@author: Mario Domínguez
 """
 
 from setuptools import setup, find_packages
