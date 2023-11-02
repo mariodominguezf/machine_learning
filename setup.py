@@ -6,7 +6,7 @@ A brief comment just to modify the file
 """
 
 from setuptools import setup, find_packages
-from Tasks import __author__,__version__,__name__
+from machine_learning import __author__,__version__,__name__
 
 
 VERSION = __version__
